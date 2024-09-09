@@ -277,8 +277,8 @@ body {
 }
 @media (max-width: 1024px) {
   .iframe {
-    width: 373px;
-    height: 210px;
+    width: 350px;
+    height: 197px;
     border-radius: 30px;
   }
 }
