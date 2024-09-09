@@ -37,6 +37,8 @@
 
 @media (max-width: 768px) {
     .carousel {
-        animation: scroll 4s linear infinite;
+        animation: scroll 10s linear infinite;
+        width: calc(100% * 10); /* To allow for infinite scrolling */
+
     }
 }
