@@ -1,0 +1,146 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 70px;
+}
+
+.nav-center {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-menu li {
+    display: inline;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: $primary-color;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block; /* Ensure the scaling works properly */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth animation */
+
+}
+
+.nav-menu a:hover {
+    color:  $hover-color;
+    transform: scale(1.2); /* Scale up the icon */
+
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: #f1931b;
+    border-radius: 4px;
+    padding: 12px;
+    width: 50px;
+    height: 46px;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.mobile-menu li {
+    margin: 20px 0;
+}
+
+.mobile-menu a {
+    color: $primary-color;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.show {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .nav-center {
+        display: none;
+    }
+    
+    .mobile-menu-icon {
+        display: block;
+        text-align: center;
+    }
+
+    #menu > div > ul {
+        padding-left: 0;
+    }
+    
+    .nav-right {
+        display: none;
+    }
+    
+    .nav-button {
+        padding-top: 40px;
+    }
+    
+    .nav-button button{
+        margin: 0 auto;
+    }
+}
+
+
+/* "prisidekite" button */
+.button-87 {
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-87:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-87:active {
+    transform: scale(0.95);
+}

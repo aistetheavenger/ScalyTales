@@ -1,0 +1,24 @@
+$primary-color: #d8bca8;
+$secondary-color: #111111;
+$hover-color: #FF512F;
+$main-font: 'Montserrat', sans-serif;
+$content-font: 'Roboto', sans-serif;
+
+body {
+    background-color: #111111;
+    color: $primary-color;
+    font-family: $main-font;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

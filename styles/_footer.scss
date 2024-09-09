@@ -1,0 +1,38 @@
+footer {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-img {
+    width: 100%;
+}
+
+.footer-img img{
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.footer-content {
+    margin-top: 40px;
+}
+
+.footer-content a {
+    color: $primary-color;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 40px; /* Increased size for bigger icons */
+    display: inline-block; /* Ensure the scaling works properly */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth animation */
+}
+
+.footer-content a:hover {
+    color: $hover-color; 
+    transform: scale(1.2); /* Scale up the icon */
+}
+
+.footer-content i {
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
