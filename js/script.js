@@ -3,13 +3,26 @@ fetch('menu.html')
 .then(response => response.text())
 .then(data => {
     document.getElementById('menu').innerHTML = data;
-    const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    mobileMenuIcon.addEventListener('click', () => {
-        mobileMenu.classList.toggle('show');
+    
+    var $body = $('body');
+    
+    $('.mobile-menu-icon').on('click', function(){
+        console.log('btn clicked');
+        $body.addClass('is-menu-open');
+        return false;
     });
     
+    $('.menu-close-btn').on('click', function(){
+        $body.removeClass('is-menu-open');
+        return false;
+    });
+    
+    $('.nav-menu-mobile').on('click', function(){
+        $body.removeClass('is-menu-open');
+        return true;    
+    });
 });
+
 
 // carousel 
 document.addEventListener('DOMContentLoaded', () => {
@@ -54,4 +67,3 @@ function closeModal() {
     var modal = document.getElementById("imageModal");
     modal.style.display = "none";
 }
-
