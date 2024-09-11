@@ -68,12 +68,12 @@ body {
 .mobile-menu-icon {
   display: none;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 28px;
   background-color: #f1931b;
   border-radius: 4px;
   padding: 12px;
-  width: 50px;
-  height: 46px;
+  width: 40px;
+  height: 40px;
   box-shadow: 0px 0px 14px -7px #f09819;
   background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
 }
@@ -94,8 +94,8 @@ body {
   margin-top: 100px;
   text-align: center;
   position: relative;
-  transform: translateY(50px);
-  transition: all 0.2s ease-out;
+  transform: translateY(200px);
+  transition: all 0.5s ease-out;
 }
 
 body.is-menu-open .mobile-menu {
@@ -142,14 +142,14 @@ body.is-menu-open .nav-menu-mobile {
     background-size: cover; /* Keep the gradient covering the button */
     background-position: 0 0;
     background-repeat: no-repeat;
-    margin: 20px 30px;
+    margin: 23px 30px;
     text-align: center;
     cursor: pointer;
     font-size: 30px;
     border-radius: 4px;
     padding: 12px;
-    width: 50px;
-    height: 46px;
+    width: 40px;
+    height: 40px;
   }
   .menu-close-btn::before {
     content: "";
@@ -171,7 +171,7 @@ body.is-menu-open .nav-menu-mobile {
     display: none;
   }
   .nav-button {
-    padding-top: 40px;
+    padding-top: 30px;
   }
   .nav-button button {
     margin: 0 auto;
@@ -208,6 +208,26 @@ body.is-menu-open .nav-menu-mobile {
 
 .button-87:active {
   transform: scale(0.95);
+}
+
+.menu-bottom-block {
+  background: #111111;
+  position: absolute;
+  bottom: 5%;
+  opacity: 0.7;
+  border-radius: 30px;
+  padding-bottom: 30px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.menu-social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto 0;
+  gap: 20px;
 }
 
 .content-wrapper {
